@@ -22,11 +22,8 @@
     for (NSString *code in [TwitterUtility availableSearchTwitterISO639_1Codes]) {
         NSLog(@"%@ - %@", code, [[NSLocale currentLocale] displayNameForKey:NSLocaleLanguageCode value:code]);
     }
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
+    NSLog(@"trendDeviceLocation: %@", [TwitterUtility trendDeviceLocation]);
 }
 
 @end

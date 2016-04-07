@@ -19,4 +19,10 @@
  */
 + (NSArray<NSString *> *)availableSearchTwitterISO639_1Codes;
 
+/**
+ *  https://dev.twitter.com/rest/reference/get/trends/available
+ */
++ (NSDictionary *)trendDeviceLocation;
++ (NSDictionary *)trendWorldwideLocation;
+
 @end
