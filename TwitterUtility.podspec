@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'TwitterUtility'
-  s.version = '0.0.1'
+  s.version = '0.0.2'
   s.summary = 'Twitter utilities.'
   s.homepage = 'https://github.com/yusuga/TwitterUtility'
   s.license = 'MIT'
