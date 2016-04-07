@@ -15,18 +15,18 @@
     return @[@"am", @"ar", @"hy", @"bn", @"bs", @"bg", @"my", @"ckb", @"zh", @"hr", @"da", @"dv", @"nl", @"en", @"et", @"fi", @"fr", @"ka", @"de", @"el", @"gu", @"he", @"hi", @"hu", @"is", @"id", @"it", @"ja", @"kn", @"km", @"ko", @"lo", @"lv", @"lt", @"ml", @"mr", @"ne", @"no", @"or", @"ps", @"fa", @"pl", @"pt", @"pa", @"ro", @"ru", @"sr", @"sd", @"si", @"sk", @"sl", @"es", @"sv", @"tl", @"ta", @"te", @"th", @"bo", @"tr", @"ur", @"ug", @"vi"];
 }
 
-+ (NSDictionary *)trendDeviceLocation
++ (NSDictionary *)trendsDeviceLocation
 {
     NSString *countyCode = [[NSLocale currentLocale] objectForKey: NSLocaleCountryCode]; // http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
     
-    NSDictionary *location = [[[self trendCountoryLocations] filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"countryCode == %@", countyCode]] firstObject];
+    NSDictionary *location = [[[self trendsCountoryLocations] filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"countryCode == %@", countyCode]] firstObject];
     if (location) return location;
-    return [self trendWorldwideLocation];
+    return [self trendsWorldwideLocation];
 }
 
 #pragma mark - Private
 
-+ (NSDictionary *)trendWorldwideLocation
++ (NSDictionary *)trendsWorldwideLocation
 {
     return @{@"name" : @"Worldwide",
              @"placeType" : @{
@@ -41,7 +41,7 @@
              };
 }
 
-+ (NSArray<NSDictionary *> *)trendCountoryLocations
++ (NSArray<NSDictionary *> *)trendsCountoryLocations
 {
     /*
      *  Hard-coded was on 4/7/16

@@ -23,7 +23,7 @@
         NSLog(@"%@ - %@", code, [[NSLocale currentLocale] displayNameForKey:NSLocaleLanguageCode value:code]);
     }
     
-    NSLog(@"trendDeviceLocation: %@", [TwitterUtility trendDeviceLocation]);
+    NSLog(@"trendDeviceLocation: %@", [TwitterUtility trendsDeviceLocation]);
 }
 
 @end

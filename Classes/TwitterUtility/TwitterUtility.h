@@ -22,7 +22,7 @@
 /**
  *  https://dev.twitter.com/rest/reference/get/trends/available
  */
-+ (NSDictionary *)trendDeviceLocation;
-+ (NSDictionary *)trendWorldwideLocation;
++ (NSDictionary *)trendsDeviceLocation;
++ (NSDictionary *)trendsWorldwideLocation;
 
 @end
